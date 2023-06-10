@@ -6,6 +6,7 @@ export default {
       colors: {
         primary: "#0e0e0e",
         secondary: "#333333",
+        dimBlack: "rgba(0, 0, 0, 0.25)",
         dimWhite: "#f6f3ee",
         maroon: "#271b1b",
       },
