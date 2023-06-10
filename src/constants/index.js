@@ -24,26 +24,26 @@ export const candleProducts = [
 export const covers = [
   {
     id: "cover",
-    img: "https://unsplash.com/photos/bdVmIkx_gIshttps://unsplash.com/photos/bdVmIkx_gIs",
+    img: "https://images.unsplash.com/photo-1601479604588-68d9e6d386b5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=813&q=80",
   },
   {
     id: "cover1",
-    img: "hhttps://unsplash.com/photos/cCFWIye3sR8",
+    img: "https://images.unsplash.com/photo-1555178738-465e12b1bfc3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
   },
   {
     id: "cover2",
-    img: "https://unsplash.com/photos/iSyyY1GfYSw",
+    img: "https://images.unsplash.com/photo-1602523961358-f9f03dd557db?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
   },
   {
     id: "cover3",
-    img: "https://unsplash.com/photos/8wMcY9OBgqs",
+    img: "https://images.unsplash.com/photo-1630448925105-7e274940769f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
   },
   {
     id: "cover4",
-    img: "https://unsplash.com/photos/BZW67ux31KU",
+    img: "https://images.unsplash.com/photo-1423483911371-490d993cefed?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80",
   },
   {
     id: "cover5",
-    img: "https://unsplash.com/photos/iKHXbvNHXPQ",
+    img: "https://images.unsplash.com/photo-1522448746354-da4936934201?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
   },
 ];
