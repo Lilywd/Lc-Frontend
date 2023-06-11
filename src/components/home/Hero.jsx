@@ -1,5 +1,6 @@
 import Navbar from "../global/Navbar";
 import { AboutSection } from "./AboutSection";
+import { NewArrivals } from "./NewArrivals";
 
 const Hero = () => {
   return (
@@ -20,6 +21,7 @@ const Hero = () => {
         </div>
       </div>
       <AboutSection />
+      <NewArrivals/>
     </>
   );
 };

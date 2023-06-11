@@ -19,6 +19,26 @@ export const candleProducts = [
     id: "candle4",
     img: "https://i.pinimg.com/originals/3c/14/79/3c1479d15766a8ad3fd5fbf7fe383b00.jpg",
   },
+  {
+    id: "candle5",
+    img: "https://i.pinimg.com/originals/4e/c1/f9/4ec1f9082ff0295826d01344220b3752.jpg",
+  },
+  {
+    id: "candle6",
+    img: "https://i.pinimg.com/originals/2f/cb/b3/2fcbb35c683ccba725f74f9c7db79970.jpg",
+  },
+  {
+    id: "candle7",
+    img: "https://i.pinimg.com/originals/8a/3c/aa/8a3caa5ee85333288c17edf06c9d976e.jpg",
+  },
+  {
+    id: "candle8",
+    img: "https://i.pinimg.com/originals/08/0a/37/080a37d2e7a748fb58887293051c5ad2.jpg",
+  },
+  {
+    id: "candle9",
+    img: "https://i.pinimg.com/originals/3c/14/79/3c1479d15766a8ad3fd5fbf7fe383b00.jpg",
+  },
 ];
 
 export const covers = [
