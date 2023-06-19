@@ -57,7 +57,7 @@ const Cart = () => {
           <h1 className="text-2xl mt-8 mx-10 text-gray-600">YOUR CART</h1>
           <h1 className="text-1xl mt-9 text-gray-600">{totalItems} items</h1>
           <div className="ml-auto">
-            <h2 className="text-1l text-gray-600 mx-8 mt-10">
+            <h2 className="text-1l text-gray-600 mx-8 mt-9">
               TOTAL: ${calculateTotal().toFixed(2)}
             </h2>
           </div>
