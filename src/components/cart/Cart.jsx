@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { candleProduct } from "../../constants/index";
-
+            
 const Cart = () => {
   const [cartItems, setCartItems] = useState(candleProduct);
 
@@ -49,12 +49,15 @@ const Cart = () => {
 
   return (
     <>
-      <div className="container mx-auto">
-        <div className="flex flex-row justify-between my-7 gap-7">
-          <h1 className="text-2xl mt-8 text-gray-600">YOUR CART</h1>
+      <div
+        className="container mx-auto my-8 custom-margin"
+        style={{ margin: "20px" }}
+      >
+        <div className="flex flex-row justify-between  mx-auto my-10 gap-7">
+          <h1 className="text-2xl mt-8 mx-10 text-gray-600">YOUR CART</h1>
           <h1 className="text-1xl mt-9 text-gray-600">{totalItems} items</h1>
           <div className="ml-auto">
-            <h2 className="text-1l text-gray-600 mt-10">
+            <h2 className="text-1l text-gray-600 mx-8 mt-10">
               TOTAL: ${calculateTotal().toFixed(2)}
             </h2>
           </div>
@@ -98,15 +101,17 @@ const Cart = () => {
                   <td className=" text-gray-600 text-center py-2 px-4 border-b">
                     ${item.price}
                   </td>
-                  <td className="py-2 px-4 items-center border-b">
-                    <div className="flex text-center items-center">
+                  <td className="py-2 px-5 items-center text-center border-b">
+                    <div className="flex justify-center items-center">
+                      {" "}
+                      {/* Updated line */}
                       <button
                         className="text-gray-600 text-center px-2 py-1"
                         onClick={() => decreaseQuantity(item.id)}
                       >
                         -
                       </button>
-                      <span className="text-gray-600 text-center mx-2">
+                      <span className="text-gray-600 item-center text-center mx-2">
                         {item.quantity}
                       </span>
                       <button
@@ -117,6 +122,7 @@ const Cart = () => {
                       </button>
                     </div>
                   </td>
+
                   <td className="text-gray-600 text-center py-5 px-10 border-b">
                     ${Number(item.price * item.quantity).toFixed(2)}
                   </td>
