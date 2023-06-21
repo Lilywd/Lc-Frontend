@@ -50,11 +50,11 @@ const Cart = () => {
   return (
     <>
       <div
-        className="container mx-auto my-8 custom-margin"
-        style={{ margin: "20px" }}
+        className="container justify-between custom-margin "
+        style={{ margin: "50px" }}
       >
-        <div className="flex flex-row justify-between  mx-auto my-10 gap-7">
-          <h1 className="text-2xl mt-8 mx-10 text-gray-600">YOUR CART</h1>
+        <div className="flex flex-row justify-between  mx-auto my-10 gap-5 w-full max-w-screen-lg mx-auto">
+          <h1 className="text-2xl ml-10 mt-8 mx-10 text-gray-600">YOUR CART</h1>
           <h1 className="text-1xl mt-9 text-gray-600">{totalItems} items</h1>
           <div className="ml-auto">
             <h2 className="text-1l text-gray-600 mx-8 mt-9">
@@ -62,7 +62,7 @@ const Cart = () => {
             </h2>
           </div>
         </div>
-        <div className="w-full">
+        <div className="w-full max-w-screen-lg mx-auto">
           <table className="min-w-full bg-white">
             <thead>
               <tr>
@@ -85,13 +85,15 @@ const Cart = () => {
             <tbody>
               {cartItems.map((item) => (
                 <tr key={item.id}>
-                  <td className=" border-b flex mt-1 item-center">
+                  <td className="border-b flex mt-2  text-center">
                     <img
                       src={item.img}
                       alt={item.description}
-                      className="w-24 h-24 mx-auto object-cover"
+                      className="w-32 h-32 mx-auto ml-10 object-cover"
+                      style={{ margin: "10px" }}
                     />
                   </td>
+
                   <td className="py-2 px-4  border-b">
                     <h3 className="font-bold">{item.product}</h3>
                     <p className="text-sm text-gray-600 text-center m-8">
@@ -151,7 +153,7 @@ const Cart = () => {
           </table>
         </div>
 
-        <div className="flex justify-between mt-5 mb-5">
+        <div className="flex justify-between mt-5 mb-5w-full max-w-screen-lg mx-auto">
           <div className="mt-4">
             <a href="#" className="text-gray-600 underline w-1 p-3">
               CONTINUE SHOPPING
@@ -160,7 +162,7 @@ const Cart = () => {
               {" "}
             </a>
           </div>
-          <button className="bg-gray-600 text-white px-3 py-3 my-3 m-3 text-1l rounded">
+          <button className="bg-raisin-black text-white px-3 py-3 my-3 m-3 text-sm rounded">
             PROCEED TO CHECKOUT
           </button>
         </div>
