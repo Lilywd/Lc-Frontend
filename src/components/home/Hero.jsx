@@ -1,3 +1,4 @@
+import Product from "../Products/Product";
 import Navbar from "../global/Navbar";
 import { AboutSection } from "./AboutSection";
 import { NewArrivals } from "./NewArrivals";
@@ -22,6 +23,7 @@ const Hero = () => {
       </div>
       <AboutSection />
       <NewArrivals/>
+      <Product/>
     </>
   );
 };
