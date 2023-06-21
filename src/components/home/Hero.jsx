@@ -1,5 +1,7 @@
 import Navbar from "../global/Navbar";
 import { AboutSection } from "./AboutSection";
+import { BestSellers } from "./BestSellers";
+import { LatestArticles } from "./LatestArticles";
 import { NewArrivals } from "./NewArrivals";
 
 const Hero = () => {
@@ -21,7 +23,9 @@ const Hero = () => {
         </div>
       </div>
       <AboutSection />
-      <NewArrivals/>
+      <NewArrivals />
+      <LatestArticles />
+      <BestSellers/>
     </>
   );
 };
