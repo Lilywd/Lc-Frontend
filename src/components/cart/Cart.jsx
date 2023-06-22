@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { candleProduct } from "../../constants/index";
-            
+import { Link } from "react-router-dom";
+
 const Cart = () => {
   const [cartItems, setCartItems] = useState(candleProduct);
 
@@ -163,7 +164,7 @@ const Cart = () => {
             </a>
           </div>
           <button className="bg-raisin-black text-white px-3 py-3 my-3 m-3 text-sm rounded">
-            PROCEED TO CHECKOUT
+            <Link to="/checkout"> PROCEED TO CHECKOUT</Link>
           </button>
         </div>
       </div>
