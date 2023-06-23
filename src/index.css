@@ -35,4 +35,7 @@
 ::-webkit-scrollbar {
     width: 10px;
 }
-  
+.bg-raisin-black {
+  background-color: #232323;
+}
+
