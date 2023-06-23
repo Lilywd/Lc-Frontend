@@ -26,8 +26,8 @@ const Product = () => {
                     {/* ABOUT */}
                     <div className='flex flex-col gap-6 lg:w-2/4'>
                         <div>
-                            <span className=' text-black-600 font-semibold'>Special Sneaker</span>
-                            <h1 className='text-3xl font-bold'>Nike Invincible 3</h1>
+                            <span className=' text-black-600 font-semibold'>Special Candles</span>
+                            <h1 className='text-3xl font-bold'>Candle Invincible 3</h1>
                         </div>
                         <h6 className='text-2xl font-semibold'>$ 199.00</h6>
                         <p className='text-gray-700'>
