@@ -11,10 +11,6 @@ const Product = () => {
   const [activeImg, setActiveImage] = useState(images.img1);
   const [amount, setAmount] = useState(1);
 
-  const handleImageClick = (image) => {
-    setActiveImage(image);
-  };
-
   return (
     <>
       <Navbar />
@@ -35,8 +31,9 @@ const Product = () => {
           <div className='flex gap-4 lg:w-2/4'>
             <img src={activeImg} alt="" className='w-full h-full aspect-square object-cover rounded-xl' />
             <div className='flex flex-col justify-between h-24 gap-8'>
-              <img src={images.img1} alt="" className={`w-24 h-24 cursor-pointer ${activeImg === images.img1 ? 'opacity-50' : ''}`} onClick={() => handleImageClick(images.img1)} />
-              <img src={images.img2} alt="" className={`w-24 h-24 cursor-pointer ${activeImg === images.img2 ? 'opacity-50' : ''}`} onClick={() => handleImageClick(images.img2)} />
+              <img src={images.img1} alt="" className='w-24 h-24 cursor-pointer' onClick={() => setActiveImage(images.img1)} />
+              <img src={images.img2} alt="" className='w-24 h-24 cursor-pointer' onClick={() => setActiveImage(images.img2)} />
+              
             </div>
           </div>
         </div>
@@ -46,14 +43,14 @@ const Product = () => {
             <span className='py-4 px-6 rounded-lg'>{amount}</span>
             <button className='ml-10 py-2 px-4 rounded-lg text-black-800 text-3xl' onClick={() => setAmount((prev) => prev + 1)}>+</button>
           </div>
-          <div className='flex flex-row justify-between gap-12'>
+          <div className='flex flex-row item-end gap-12'>
             <div className='flex flex-row gap-4 items-center m-10'>
               <span className='bg-black rounded-full h-3 w-3'></span>
               <span className='bg-gray-400 rounded-full h-3 w-3'></span>
               <span className='bg-gray-400 rounded-full h-3 w-3'></span>
             </div>
-            <div className='flex flex-row items-end gap-5'>
-              <button className='text-black border font-semibold py-3 px-16 rounded-2 h-full uppercase'>Add to Wishlist</button>
+            <div className='flex flex-row items-end gap-5'> {/* Update this container */}
+              <button className='text-black border font-semibold py-3 px-16 rounded-2 h-full uppercase'>Add to Whishlist</button>
               <button className='bg-black text-white font-semibold py-3 px-16 rounded-2 h-full uppercase'>Add to Cart</button>
             </div>
           </div>
