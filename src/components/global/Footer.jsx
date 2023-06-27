@@ -1,6 +1,7 @@
+// eslint-disable-next-line no-unused-vars
 import React from 'react'
 
-export const Footer = () => {
+const Footer = () => {
     return (
         <footer className="bg-white dark:bg-gray-900">
             <div className="mx-auto max-w-screen-xl px-4 pb-6 pt-16 sm:px-6 lg:px-8">
@@ -38,7 +39,7 @@ export const Footer = () => {
                         <p className="text-lg font-medium text-gray-900 dark:text-white">
                             About Us
                         </p>
-                        <hr className="border border-gray-400 my-2"/>
+                        <hr className="border border-gray-400 my-2" />
                         <ul className="mt-8 space-y-4 text-sm">
                             <li>
                                 <a
@@ -82,7 +83,7 @@ export const Footer = () => {
                         <p className="text-lg font-medium text-gray-900 dark:text-white">
                             Our Services
                         </p>
-<hr className="border border-gray-400 my-2"/>
+                        <hr className="border border-gray-400 my-2" />
                         <ul className="mt-8 space-y-4 text-sm">
                             <li>
                                 <a
@@ -126,7 +127,7 @@ export const Footer = () => {
                         <p className="text-lg font-medium text-gray-900 dark:text-white">
                             Resources
                         </p>
-<hr className="border border-gray-400 my-2"/>
+                        <hr className="border border-gray-400 my-2" />
                         <ul className="mt-8 space-y-4 text-sm">
                             <li>
                                 <a
@@ -179,7 +180,7 @@ export const Footer = () => {
                         <p className="text-lg font-medium text-gray-900 dark:text-white">
                             Helpful Links
                         </p>
-<hr className="border border-gray-400 my-2"/>
+                        <hr className="border border-gray-400 my-2" />
                         <ul className="mt-8 space-y-4 text-sm">
                             <li>
                                 <a
@@ -208,4 +209,6 @@ export const Footer = () => {
             </div>
         </footer>
     )
+    
 }
+export default Footer;
