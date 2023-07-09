@@ -104,11 +104,4 @@ export const candleProduct = [
     price: 800,
     quantity: 1,
   },
-  {
-    id: "candle5",
-    img: "https://i.pinimg.com/originals/4e/c1/f9/4ec1f9082ff0295826d01344220b3752.jpg",
-    description: "Non-scented candles",
-    price: 1000,
-    quantity: 1,
-  },
 ];
