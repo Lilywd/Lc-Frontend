@@ -60,28 +60,27 @@ const Product = () => {
                   )}
                 </div>
               ))}
+            <div className="flex flex-col w-16 h-20 gap-1 items-center border right-0 mr-1 mt-16  ">
+              <button
+                className="ml-10 rounded-lg text-black-800 text-m"
+                onClick={() => {
+                  if (amount > 0) {
+                    setAmount((prev) => prev - 1);
+                  }
+                }}
+              >
+                -
+              </button>
+
+              <span className="rounded-lg text-m">{amount}</span>
+              <button
+                className="ml-10 rounded-lg text-black-800 text-m"
+                onClick={() => setAmount((prev) => prev + 1)}
+              >
+                +
+              </button>
+            </div>
           </div>
-        </div>
-
-        <div className="flex flex-col w-16 h-20 gap-1 items-center border mr-8  ">
-          <button
-            className="ml-10 rounded-lg text-black-800 text-m"
-            onClick={() => {
-              if (amount > 0) {
-                setAmount((prev) => prev - 1);
-              }
-            }}
-          >
-            -
-          </button>
-
-          <span className="rounded-lg text-m">{amount}</span>
-          <button
-            className="ml-10 rounded-lg text-black-800 text-m"
-            onClick={() => setAmount((prev) => prev + 1)}
-          >
-            +
-          </button>
         </div>
 
         <div className="flex flex-col justify-between h-24 gap-8 lg:mt-14 gap-4">
@@ -107,10 +106,12 @@ const Product = () => {
                         </div>
                       ))}
                     </div>
+
                     <div className="flex flex-row items-end mb-10 gap-8">
                       <button className="text-black border font-semibold py-2 px-4 rounded-lg uppercase text-sm">
                         Add to Wishlist
                       </button>
+
                       <button className="bg-black text-white font-semibold py-2 px-6 rounded-lg uppercase text-sm ml-4">
                         <Link to="/cart">Add to Cart</Link>
                       </button>

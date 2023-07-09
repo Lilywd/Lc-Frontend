@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 //todo make responsive menu
 // import { useState } from "react";
 // import { menu, close } from "../../assets";
@@ -90,12 +91,11 @@ const Navbar = ({ logo }) => {
               </a>
             </li>
             <li>
-              <a
-                href="#"
+              <Link to='/cart'
                 className="cursor-pointer block py-2rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-secondary md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 text-white "
               >
                 cart
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
